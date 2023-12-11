@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 
-using std::cout, std::endl, std::ifstream, std::ofstream, std::string, std::atoi;
+using std::cout, std::endl, std::ifstream, std::string;
 
 int main() {
   ifstream in("input.txt");
@@ -28,11 +28,9 @@ int main() {
         current += int(c) - '0';
         break;
       }
-
       length--;
     }
     total += current;
-    cout << current << endl;
   }
   cout << total << endl;
   return 0;
