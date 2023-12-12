@@ -24,7 +24,7 @@ vector<int> parse(string s) {
   int maxReds = -1, maxBlues = -1, maxGreens = -1;
   bool valid = true;
 
-  for (int i = 2; i < vals.size(); i += 2) {
+  for (unsigned long i = 2; i < vals.size(); i += 2) {
     int count = std::stoi(vals[i]);
     int reds = 0, blues = 0, greens = 0;
     string color = vals[i+1];
